@@ -1,15 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div class="profile container-fluid">
+    <Nav></Nav>
+    <Header></Header>
+    <Main></Main>
+    <Footer></Footer>
+  </div>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Nav,
+    Header, 
+    Main, 
+    Footer
   }
 }
 </script>
@@ -22,5 +35,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#app .profile {
+
 }
 </style>
